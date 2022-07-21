@@ -11,10 +11,9 @@ import plotly.graph_objects as go
 import requests
 import shap
 import streamlit as st
-from functools import lru_cache
 
-#@st.cache(persist=True, allow_output_mutation=False, suppress_st_warning=True)
-@lru_cache
+
+@st.cache(persist=True, allow_output_mutation=False, suppress_st_warning=True)
 def mod_data():
     # chargement du data_test
     path = "fichier_api/fichier-test1000-api.csv"
@@ -53,8 +52,6 @@ data, data_tr, model = mod_data()
 # définition des fonctions utiles
 
 
-#@st.cache(persist=True, allow_output_mutation=False, suppress_st_warning=True)
-@lru_cache
 def gauge(ID):
     st.header("Score statistique du client n°{}".format(ID))
     st.subheader("Statut: {}".format(class_cat))
@@ -92,8 +89,6 @@ def gauge(ID):
 # interactive_plot
 
 
-#@st.cache(persist=True, allow_output_mutation=False, suppress_st_warning=True)
-@lru_cache
 def interactive_hist_plot(ID):
     st.subheader("Affichage d'une distribution statistique")
     feature = st.selectbox("Choisir une caratéristique",
@@ -112,8 +107,6 @@ def interactive_hist_plot(ID):
     return st.plotly_chart(fig)
 
 
-#@st.cache(persist=True, allow_output_mutation=False, suppress_st_warning=True)
-@lru_cache
 def interactive_scatter_plot(ID):
     st.subheader("Affichage de la relation entre 2 caractéristiques")
 
