@@ -13,7 +13,7 @@ import shap
 import streamlit as st
 
 
-@st.cache(persist=True, allow_output_mutation=False, suppress_st_warning=True)
+@st.cache(persist=True, allow_output_mutation=True, suppress_st_warning=True)
 def mod_data():
     # chargement du data_test
     path = "fichier_api/fichier-test1000-api.csv"
