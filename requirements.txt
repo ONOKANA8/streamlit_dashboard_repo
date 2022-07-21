@@ -1,10 +1,9 @@
-uvicorn
-fastapi
 pandas
 joblib
 requests
 shap
 streamlit
-functools
 plotly
-
+matplotlib
+lightgbm
+functools

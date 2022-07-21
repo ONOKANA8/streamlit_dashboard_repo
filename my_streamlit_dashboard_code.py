@@ -11,18 +11,17 @@ import plotly.graph_objects as go
 import requests
 import shap
 import streamlit as st
-import functools
 from functools import lru_cache
 
 #@st.cache(persist=True, allow_output_mutation=False, suppress_st_warning=True)
 @lru_cache
 def mod_data():
     # chargement du data_test
-    path = r"D:\fichier_api\fichier-test1000-api.csv"
+    path = "fichier_api/fichier-test1000-api.csv"
     data = pd.read_csv(path).drop("Unnamed: 0", axis=1)
 
     # chargement du modèle entrainé
-    path_ = r"D:\fichier_api\joblib_lgbm0_Model.pkl"
+    path_ = "fichier_api/joblib_lgbm0_Model.pkl"
     model = joblib.load(path_)
 
     # complétion de data_test avec score, class_bin et class_cat
@@ -42,7 +41,7 @@ def mod_data():
     data["class_cat"] = class_cat
 
     # Importation de données d'entrainement pour le tracé de shap
-    path__ = r"D:\fichier_api\data_tr_api"
+    path__ = "fichier_api/data_tr_api"
     data_tr = pd.read_csv(path__)
     data_tr = data_tr.drop("Unnamed: 0", axis=1)
 
@@ -158,7 +157,7 @@ if ID not in data.SK_ID_CURR.values:
     st.write("ERREUR : Choisir un identifiant correct")
 
 else:
-    r = requests.get('http://127.0.0.7:8000/credit', params={"ID": ID})
+    r = requests.get('https://pret-a-depenser-heroku.herokuapp.com/credit', params={"ID": ID})
     req = r.json()
     val_score = [j for i, j in req[0].items()][0]
     class_cat = [j for i, j in req[1].items()][0]
