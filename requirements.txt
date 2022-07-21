@@ -1,0 +1,10 @@
+uvicorn
+fastapi
+pandas
+joblib
+requests
+shap
+streamlit
+functools
+plotly
+
