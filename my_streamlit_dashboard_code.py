@@ -17,7 +17,7 @@ import matplotlib.image as mpimg
 # ========================================= Importation de données à mettre en cache ==================================
 
 
-# @st.cache(persist=True, allow_output_mutation=True, suppress_st_warning=True)
+@st.cache(persist=True, allow_output_mutation=True, suppress_st_warning=True)
 def mod_data():
     # chargement du data_test
     path = "/fichier_api/fichier-test1000-api.csv"
@@ -46,7 +46,7 @@ def mod_data():
     return data, model
 
 
-# st.cache(persist=True, allow_output_mutation=True, suppress_st_warning=True)
+@st.cache(persist=True, allow_output_mutation=True, suppress_st_warning=True)
 def shap_val():
     # Importation de données d'entrainement pour le tracé de shap
     path__ = "fichier_api/data_tr_api"
@@ -60,7 +60,7 @@ def shap_val():
     return shap_values
 
 
-# @st.cache(persist=True, allow_output_mutation=True, suppress_st_warning=True)
+@st.cache(persist=True, allow_output_mutation=True, suppress_st_warning=True)
 def logo():
     path = "/fichier_api/logo_pret_a_depenser.png"
     image = mpimg.imread(path)
