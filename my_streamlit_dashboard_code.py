@@ -20,11 +20,11 @@ import matplotlib.image as mpimg
 @st.cache(persist=True, allow_output_mutation=True, suppress_st_warning=True)
 def mod_data():
     # chargement du data_test
-    path = "/fichier_api/fichier-test1000-api.csv"
+    path = "fichier_api/fichier-test1000-api.csv"
     data = pd.read_csv(path).drop("Unnamed: 0", axis=1)
 
     # chargement du modèle entrainé
-    path_ = "/fichier_api/joblib_lgbm0_Model.pkl"
+    path_ = "fichier_api/joblib_lgbm0_Model.pkl"
     model = joblib.load(path_)
 
     # complétion de data_test avec score, class_bin et class_cat
@@ -62,7 +62,7 @@ def shap_val():
 
 @st.cache(persist=True, allow_output_mutation=True, suppress_st_warning=True)
 def logo():
-    path = "/fichier_api/logo_pret_a_depenser.png"
+    path = "fichier_api/logo_pret_a_depenser.png"
     image = mpimg.imread(path)
     return image
 
