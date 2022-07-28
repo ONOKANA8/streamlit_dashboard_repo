@@ -249,7 +249,7 @@ st.sidebar.image(image, use_column_width=True)
 
 ID = st.number_input("Veuillez saisir un identifiant client ici :", key=int, step=1)
 if ID not in data.SK_ID_CURR.values:
-    st.write("ERREUR IDENTIFIANT: Veuillez saisir un identifiant client correct")
+    st.write("Veuillez saisir un identifiant client valide pour débuter l'analyse")
 
 else:
     r = requests.get("https://pret-a-depenser-heroku.herokuapp.com/credit", params={"ID": ID})
