@@ -1,3 +1,7 @@
+
+
+![Streamlit](https://streamlit.io/images/brand/streamlit-logo-primary-colormark-lighttext.png)
+
 # Streamlit tutoriel
 |----------------------------------------------------------------------------------------------------------------------|
 
@@ -6,6 +10,22 @@ Bonjour :wave:, et bienvenue dans ce projet d'affichage streamlit.
 Il s'agit ici d"une description des fichiers de ce projet dans le but d'une meilleur compréhension 
 de leur utilisation.
 
+Ce travail intervient dans un contexte précis et une problématique particulière.
+
+En effet, il s'agit d'une société financière, **Prêt à dépenser** qui propose des crédits à la consommation pour des
+personnes ayant peu ou pas du tout d'historique de prêt. Le jeu de données mise à notre disposition pour ce projet est
+disponible sur Kaggle (Voir source des données au bas de page).
+
+## Notre mission 
+
+- Mise en oeuvre d'un outil de **"scoring crédit"** pour calculer la probabilité de défaut de paiement de chaque client
+   (Développement d'un modèle de classification);
+- S'assurer de comprendre le modèle par une interprétabilité de ce dernier afin de garder une 
+  transparence sur les prises de décision d'octroi de crédit;
+- Développement d'un dashboard interactif utile pour les chargés de clients et aussi pour les clients.
+
+
+## Pour ce répertoire
 Vous trouverez ici la description des fichiers contenus dans le dossier **fichier_api** et leur différentes utilités.
 
 | Nom fichier             | Description                                                                                                                                                                                                                                                                                                      |
@@ -37,7 +57,9 @@ Ces opérations sont associées à des fonctions définies
 ## Exécution Streamlit
 
 Avec PyCharm par exemple, vous pouvez l'exécuter en local en tapant la commande : 
-- streamlit run my_streamlit_dashboard_code.py
+- ```code
+  streamlit run my_streamlit_dashboard_code.py
+  ```
 dans votre terminal puis l'onglet  **Command Prompt**
 
 
