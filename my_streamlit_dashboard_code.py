@@ -20,11 +20,11 @@ import matplotlib.image as mpimg
 @st.cache(persist=True, allow_output_mutation=True, suppress_st_warning=True)
 def mod_data():
     # chargement du data_test
-    path = "fichier_api/data_pred.csv"
+    path = "fichier_api/data_predict.csv"
     data = pd.read_csv(path).drop("Unnamed: 0", axis=1)
 
     # chargement du modèle entrainé
-    path_ = "fichier_api/joblib_lgbm0_Model.pkl"
+    path_ = "fichier_api/joblib_lgbm_beta_3_Model.pkl"
     model = joblib.load(path_)
 
     return data, model
