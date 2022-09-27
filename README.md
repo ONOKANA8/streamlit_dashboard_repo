@@ -3,7 +3,6 @@
 ![Streamlit](https://streamlit.io/images/brand/streamlit-logo-primary-colormark-lighttext.png)
 
 # Streamlit tutoriel
-|----------------------------------------------------------------------------------------------------------------------|
 
 Bonjour :wave:, et bienvenue dans ce projet d'affichage streamlit.
 
@@ -28,7 +27,7 @@ disponible sur Kaggle (Voir la source des données au bas de page).
 ## Pour ce répertoire
 Vous trouverez ici la description des fichiers contenus dans le dossier **fichier_api** et leurs différentes utilités.
 
-| Nom fichier                     | Description                                                                                                                                                                                                                                                                                                           |
+| Nom fichier                     | Description                                                                                                                                                                                                                                                                                                           | 
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | joblib_lgbm_beta_3_Model.pkl    | C'est le modèle prédctif conçu en interne pour prédire les défauts de paiement obtenu après sauvegarde via la librairie joblib                                                                                                                                                                                        |
 | logo_pret_a_depenser.png        | il s'agit d'un logo d'entreprise mettre en première page de dashboard streamlit                                                                                                                                                                                                                                       |
