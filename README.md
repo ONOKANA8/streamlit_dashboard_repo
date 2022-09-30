@@ -67,7 +67,7 @@ Pour un déploiement efficace sur le cloud Heroku, d'autres fichiers sont réqui
 
 | Nom fichier      | Description                                                                                                                                                                                                                          |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| requirements.txt | Fichier contenant toutes les librairies utile. au bon fonctionnement de l'application                                                                                                                                                |
+| requirements.txt | Fichier contenant toutes les librairies utiles au bon fonctionnement de l'application                                                                                                                                                |
 | setup.sh         | Il s'agit d'un fichier shell utilsé dans le fichier Procfile ci-dessous.                                                                                                                                                             |
 | Procfile         | Procfile spécifie à peu près les commandes une fois que vous exécutez l'application sur Heroku. Nous spécifions le fichier shell que nous avons créé ci-dessus, puis appelons Streamlit pour exécuter my_streamlit_dashboard_code.py |
 
