@@ -4,7 +4,7 @@
 
 # Streamlit tutoriel
 
-Bonjour :wave:, et bienvenue dans ce projet d'affichage streamlit.
+Bonjour :wave:, et bienvenue dans ce projet d'affichage de dashboard streamlit sur le web.
 
 Il s'agit ici d"une description des fichiers de ce projet dans le but d'une meilleure compréhension 
 de leur utilisation.
