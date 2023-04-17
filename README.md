@@ -86,4 +86,4 @@ liens:
 
 
 # ATTENTION
-L'application web pret-a-depenser-board est active mais son adresse ne fonctionne plus depuis le 28 Novembre 2022. En effet la version gratuite du cloud Heroku à parti de laquelle l'application a été déployée ne l'est plus. (Preuve : https://cloud-computing.developpez.com/actu/336000/Heroku-met-fin-a-son-offre-gratuite-l-entreprise-annonce-egalement-qu-elle-va-purger-les-comptes-inactifs-en-raison-d-abus-continus/)
+L'application web pret-a-depenser-board est active mais son adresse ne fonctionne plus depuis le 28 Novembre 2022. En effet la version gratuite du cloud Heroku à partir de laquelle l'application a été déployée ne l'est plus. (Preuve : https://cloud-computing.developpez.com/actu/336000/Heroku-met-fin-a-son-offre-gratuite-l-entreprise-annonce-egalement-qu-elle-va-purger-les-comptes-inactifs-en-raison-d-abus-continus/)
